@@ -1,4 +1,5 @@
 # n8n Docker Compose Setup
+![1_sgRcYeynK6LxsHF4PGsHeQ](https://github.com/user-attachments/assets/27b8999c-c04c-4ce1-a8e0-63e9447f6eef)
 
 Dokumentasi ini menjelaskan langkah demi langkah untuk menjalankan [n8n](https://n8n.io/) menggunakan Docker Compose berdasarkan file `docker-compose.yml` yang telah Anda buat.
 
@@ -138,7 +139,31 @@ http://localhost:5678
   Restart container dengan `docker-compose down` lalu `docker-compose up -d`.
 - **Docker tidak bisa dijalankan:**  
   Pastikan Docker Desktop sudah aktif.
-
+- **Masalah Path/Akses ke Root (/):**
+  n8n tidak memiliki route / secara default, Solusi: Akses langsung ke endpoint editor:
+ ```sh
+  http://localhost:5678/workflow
+  ```
+atau 
+```sh
+ http://localhost:5678/login
+  ```
+- **Cache Browser/Redirect Loop:**
+Browser mungkin mencoba redirect ke HTTPS atau menyimpan cache salah. Buka di mode incognito atau gunakan curl untuk test:
+```sh
+curl -v http://localhost:5678/workflow
+  ```
+- **Akses URL berikut:**
+  `http://localhost:5678/workflow` 
+  `Login: http://localhost:5678/login` 
+- **Jika masih error cek lognya :**
+```sh
+docker-compose logs n8n --tail=100
+  ```
+atau 
+```sh
+curl -v http://localhost:5678/healthz
+  ```
 ---
 
 ## Referensi
