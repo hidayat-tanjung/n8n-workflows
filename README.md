@@ -1,6 +1,5 @@
 # n8n Docker Compose Setup
-![1_sgRcYeynK6LxsHF4PGsHeQ](https://github.com/user-attachments/assets/27b8999c-c04c-4ce1-a8e0-63e9447f6eef)
-
+![c08901b3285b983b06900d1d9f9fdb42980685db](https://github.com/user-attachments/assets/c854d31a-e52a-4022-9b65-b7fbf6a7df28)
 Dokumentasi ini menjelaskan langkah demi langkah untuk menjalankan [n8n](https://n8n.io/) menggunakan Docker Compose berdasarkan file `docker-compose.yml` yang telah Anda buat.
 
 ---
