@@ -39,8 +39,8 @@ File ini digunakan untuk menjalankan aplikasi n8n (workflow automation tool) sec
 ```
 .
 ├── docker-compose.yml
-├── .env                # (opsional, untuk environment variable n8n)
-└── n8n_data/           # (otomatis dibuat, untuk menyimpan data n8n)
+├── .env               
+└── n8n_data/          
 ```
 
 ---
