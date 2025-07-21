@@ -81,7 +81,7 @@ volumes:
    Arahkan ke folder tempat file `docker-compose.yml` berada.
 
    ```sh
-   cd "C:\Users\marli\OneDrive\Desktop\New folder"
+   cd "C:\Users\hidayat\OneDrive\Desktop\New folder"
    ```
 
 2. **Jalankan Docker Compose**
